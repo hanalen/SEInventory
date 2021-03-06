@@ -120,8 +120,13 @@ namespace IngameScript
 
 		public void Main(string argument, UpdateType updateSource)
 		{
-			//this.Light();
-			InvenSort();
+			tickCount++;
+			Echo($"Next Tick: {tickCount} / 10");
+			if (tickCount>=10)
+			{
+				InvenSort();
+				tickCount = 0;
+			}
 			
 		}
 
