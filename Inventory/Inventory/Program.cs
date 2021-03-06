@@ -33,7 +33,7 @@ namespace IngameScript
 
 		public Program()
 		{
-			Runtime.UpdateFrequency = UpdateFrequency.Once;
+			Runtime.UpdateFrequency = UpdateFrequency.Update100;
 			listComponent.Add("MyObjectBuilder_Component/BulletproofGlass");
 			listComponent.Add("MyObjectBuilder_Component/Canvas");
 			listComponent.Add("MyObjectBuilder_Component/Computer");
